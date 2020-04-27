@@ -1,0 +1,129 @@
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-pzrt2-3[0m stage [32mrun-make[0m and container [32mstep-credential-initializer-l5t9k[0m
+{"level":"warn","ts":1587985349.477704,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1587985349.4782474,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-pzrt2-3[0m stage [32mrun-make[0m and container [32mstep-working-dir-initializer-2p754[0m
+{"level":"warn","ts":1587985350.5720572,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587985350.57368,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-pzrt2-3[0m stage [32mrun-make[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-pzrt2-3[0m stage [32mrun-make[0m and container [32mstep-create-dir-workspace-6wfpb[0m
+{"level":"warn","ts":1587985356.759849,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587985356.7677715,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p source\"; output "}
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-pzrt2-3[0m stage [32mrun-make[0m and container [32mstep-git-source-romanrzes-go-project-for-test-c-pzrt2-xgqkj[0m
+{"level":"warn","ts":1587985357.0285726,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1587985358.1659193,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/go-project-for-test-command.git @ v0.0.3 in path /workspace/source"}
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-pzrt2-3[0m stage [32mrun-make[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-pzrt2-3[0m stage [32mrun-make[0m and container [32mstep-setup-jx-git-credentials[0m
+failed to get helm version: failed to run 'helm version --short' command in directory '', output: 'Client: v2.14.3+g0e7f3b6
+Error: could not find tiller'
+old helm binary on the PATH so replacing with helm 3
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/**r-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-pzrt2-3[0m stage [32mrun-make[0m and container [32mstep-build-make-build[0m
+CGO_ENABLED=0 GO15VENDOREXPERIMENT=1 go build -ldflags '' -o bin/go-project-for-test-command main.go
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-pzrt2-3[0m stage [32mrun-make[0m and container [32mstep-source-mkdir-romanrzes-go-project-for-test-c-pzrt2-kz2mv[0m
+{"level":"warn","ts":1587985368.2615964,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587985368.264574,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /pvc/run-make/workspace\"; output "}
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-pzrt2-3[0m stage [32mrun-make[0m and container [32mstep-source-copy-romanrzes-go-project-for-test-c-pzrt2-t6c58[0m
+{"level":"warn","ts":1587985368.5363736,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587985368.554146,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c cp -r source/. /pvc/run-make/workspace\"; output "}
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-pzrt2-3[0m stage [32meverything-else[0m and container [32mstep-credential-initializer-75bpn[0m
+{"level":"warn","ts":1587985371.384365,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1587985371.3848941,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-pzrt2-3[0m stage [32meverything-else[0m and container [32mstep-working-dir-initializer-5d55x[0m
+{"level":"warn","ts":1587985372.731541,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587985372.7329564,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-pzrt2-3[0m stage [32meverything-else[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-pzrt2-3[0m stage [32meverything-else[0m and container [32mstep-create-dir-workspace-f5djg[0m
+{"level":"warn","ts":1587985378.8881247,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587985378.890218,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-pzrt2-3[0m stage [32meverything-else[0m and container [32mstep-source-copy-workspace-85ksx[0m
+{"level":"warn","ts":1587985379.1558657,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587985379.2595887,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c cp -r /pvc/run-make/workspace/. /workspace/source\"; output "}
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-pzrt2-3[0m stage [32meverything-else[0m and container [32mstep-build-container-build[0m
+ERROR: logging before flag.Parse: E0427 11:02:59.599483      12 metadata.go:241] Failed to unmarshal scopes: invalid character 'h' looking for beginning of value
+[36mINFO[0m[0000] No base image, nothing to extract            
+[36mINFO[0m[0000] cmd: EXPOSE                                  
+[36mINFO[0m[0000] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0000] Using files from context: [/workspace/source/bin] 
+[36mINFO[0m[0000] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0000] Taking snapshot of full filesystem...        
+[36mINFO[0m[0000] EXPOSE 8080                                  
+[36mINFO[0m[0000] cmd: EXPOSE                                  
+[36mINFO[0m[0000] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0000] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0000] ENTRYPOINT ["/go-project-for-test-command"]  
+[36mINFO[0m[0000] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0000] Using files from context: [/workspace/source/bin] 
+[36mINFO[0m[0000] COPY ./bin/ /                                
+[36mINFO[0m[0000] Taking snapshot of files...                  
+ERROR: logging before flag.Parse: E0427 11:02:59.884576      12 metadata.go:142] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+ERROR: logging before flag.Parse: E0427 11:02:59.886874      12 metadata.go:159] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+2020/04/27 11:03:00 pushed blob: sha256:61e5f7c5eb1e55b1cf9ab4707de854aefc54075d8315e5ec7ba77b1284e50c90
+2020/04/27 11:03:01 pushed blob: sha256:8da1bacdfbcce2393a8267de9ed76045602595ac60ee8616ff6620d26325a5b4
+2020/04/27 11:03:01 v2.livew.io/go-project-for-test-command:0.0.3: digest: sha256:3bb890352009e914f2f9473dbbcbfed6ebb10bd3e1e534ae144cc420066fb772 size: 428
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-pzrt2-3[0m stage [32meverything-else[0m and container [32mstep-build-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-pzrt2-3[0m stage [32meverything-else[0m and container [32mstep-promote-changelog[0m
+Converted /workspace/source to an unshallow repository
+Generating change log from git ref de9dee3534176be66d4b8a9d1c750541864fc6c8 => c13f3b0e903eb9140541607211b250daa157fc68
+Associating user x-0 in users.jenkins.io with email roman@livewyer.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit 7c723886932b890e3522ad36b96769d325ec5b35 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Associating user x-0 in users.jenkins.io with email roman@livewyer.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit 7c723886932b890e3522ad36b96769d325ec5b35 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Finding issues in commit messages using git format
+WARNING: No release found for *********/go-project-for-test-command and tag v0.0.3 so creating a new release
+Updated the release information at https://github.com/*********/go-project-for-test-command/releases/tag/v0.0.3
+generated: /workspace/source/charts/go-project-for-test-command/templates/release.yaml
+Created Release go-project-for-test-command-0-0-3 resource in namespace **
+Updating PipelineActivity *********-go-project-for-test-command-master-3 with version 0.0.3
+Updated PipelineActivities *********-go-project-for-test-command-master-3 with release notes URL: https://github.com/*********/go-project-for-test-command/releases/tag/v0.0.3
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-pzrt2-3[0m stage [32meverything-else[0m and container [32mstep-promote-helm-release[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Uploading chart file go-project-for-test-command-0.0.3.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Received 201 response: {"saved":true}
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-pzrt2-3[0m stage [32meverything-else[0m and container [32mstep-promote-jx-promote[0m
+failed to get helm version: failed to run 'helm version --short' command in directory '', output: 'Client: v2.14.3+g0e7f3b6
+Error: could not find tiller'
+old helm binary on the PATH so replacing with helm 3
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/**r-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Promoting app go-project-for-test-command version 0.0.3 to namespace **-staging
+WARNING: 
+Created Pull Request: https://github.com/*********/environment-test-cluster-staging/pull/6
+Added label updatebot to Pull Request https://github.com/*********/environment-test-cluster-staging/pull/6
+got git provider status pending from PR https://github.com/*********/environment-test-cluster-staging/pull/6
+got git provider status pending from PR https://github.com/*********/environment-test-cluster-staging/pull/6
+got git provider status pending from PR https://github.com/*********/environment-test-cluster-staging/pull/6
+Pull Request https://github.com/*********/environment-test-cluster-staging/pull/6 is merged at sha 146d136d777e0f1c7036fb3c5ab3fe11464c2e73
+Pull Request merged but we are not waiting for the update pipeline to complete!
+WARNING: Could not find the service URL in namespace **-staging for names go-project-for-test-command, **-go-project-for-test-command, **-staging-go-project-for-test-command
