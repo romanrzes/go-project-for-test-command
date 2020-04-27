@@ -6,6 +6,7 @@ image:
   repository: draft
   tag: dev
   pullPolicy: IfNotPresent
+opa: 1
 
 # define environment variables here as a map of key: value
 env:
