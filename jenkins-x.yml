@@ -19,13 +19,13 @@ pipelineConfig:
             - --cache-dir=/workspace
             - --context=/workspace/source
             - --dockerfile=/workspace/source/Dockerfile
-            - --destination=gcr.io/dark-arcade-274513/go-project-for-test-command:${inputs.params.version}
-            - --cache-repo=gcr.io/dark-arcade-274513/cache
+            - --destination=v2.livew.io/go-project-for-test-command:${inputs.params.version}
+            - --cache-repo=v2.livew.io/cache
             command: /kaniko/executor
             dir: /workspace/source
             image: gcr.io/kaniko-project/executor:9912ccbf8d22bbafbf971124600fbb0b13b9cbd6
             name: build-container-build
-          - command: jx step post build --image gcr.io/dark-arcade-274513/go-project-for-test-command:$PREVIEW_VERSION
+          - command: jx step post build --image v2.livew.io/go-project-for-test-command:$PREVIEW_VERSION
             name: postbuild-post-build
           - command: make preview
             dir: /workspace/source/charts/preview
@@ -51,13 +51,13 @@ pipelineConfig:
             - --cache-dir=/workspace
             - --context=/workspace/source
             - --dockerfile=/workspace/source/Dockerfile
-            - --destination=gcr.io/dark-arcade-274513/go-project-for-test-command:${inputs.params.version}
-            - --cache-repo=gcr.io/dark-arcade-274513/cache
+            - --destination=v2.livew.io/go-project-for-test-command:${inputs.params.version}
+            - --cache-repo=v2.livew.io/cache
             command: /kaniko/executor
             dir: /workspace/source
             image: gcr.io/kaniko-project/executor:9912ccbf8d22bbafbf971124600fbb0b13b9cbd6
             name: build-container-build
-          - command: jx step post build --image gcr.io/dark-arcade-274513/go-project-for-test-command:${VERSION}
+          - command: jx step post build --image image v2.livew.io/go-project-for-test-command:${VERSION}
             name: build-post-build
           - command: jx step changelog --version v${VERSION}
             name: promote-changelog
