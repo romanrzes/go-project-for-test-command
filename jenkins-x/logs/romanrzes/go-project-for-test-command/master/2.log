@@ -1,0 +1,141 @@
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-xg87r-2[0m stage [32mrun-make[0m and container [32mstep-credential-initializer-lt5gx[0m
+{"level":"warn","ts":1587982694.3927722,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1587982694.3933096,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-xg87r-2[0m stage [32mrun-make[0m and container [32mstep-working-dir-initializer-5vmds[0m
+{"level":"warn","ts":1587982695.3769486,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587982695.3781028,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-xg87r-2[0m stage [32mrun-make[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-xg87r-2[0m stage [32mrun-make[0m and container [32mstep-create-dir-workspace-85k26[0m
+{"level":"warn","ts":1587982701.6177084,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587982701.6191359,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p source\"; output "}
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-xg87r-2[0m stage [32mrun-make[0m and container [32mstep-git-source-romanrzes-go-project-for-test-c-xg87r-4fwbr[0m
+{"level":"warn","ts":1587982701.8629732,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1587982703.1317537,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/go-project-for-test-command.git @ v0.0.2 in path /workspace/source"}
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-xg87r-2[0m stage [32mrun-make[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-xg87r-2[0m stage [32mrun-make[0m and container [32mstep-setup-jx-git-credentials[0m
+failed to get helm version: failed to run 'helm version --short' command in directory '', output: 'Client: v2.14.3+g0e7f3b6
+Error: could not find tiller'
+old helm binary on the PATH so replacing with helm 3
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/**r-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-xg87r-2[0m stage [32mrun-make[0m and container [32mstep-build-make-build[0m
+CGO_ENABLED=0 GO15VENDOREXPERIMENT=1 go build -ldflags '' -o bin/go-project-for-test-command main.go
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-xg87r-2[0m stage [32mrun-make[0m and container [32mstep-source-mkdir-romanrzes-go-project-for-test-c-xg87r-nrpvh[0m
+{"level":"warn","ts":1587982713.0376346,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587982713.041022,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /pvc/run-make/workspace\"; output "}
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-xg87r-2[0m stage [32mrun-make[0m and container [32mstep-source-copy-romanrzes-go-project-for-test-c-xg87r-p56dh[0m
+{"level":"warn","ts":1587982713.3101969,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587982713.3264744,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c cp -r source/. /pvc/run-make/workspace\"; output "}
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-xg87r-2[0m stage [32meverything-else[0m and container [32mstep-credential-initializer-nkg2r[0m
+{"level":"warn","ts":1587982719.5777328,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1587982719.5783284,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-xg87r-2[0m stage [32meverything-else[0m and container [32mstep-working-dir-initializer-ssgb7[0m
+{"level":"warn","ts":1587982720.0139272,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587982720.0169206,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-xg87r-2[0m stage [32meverything-else[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-xg87r-2[0m stage [32meverything-else[0m and container [32mstep-create-dir-workspace-cgw5d[0m
+{"level":"warn","ts":1587982726.1153965,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587982726.1177092,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-xg87r-2[0m stage [32meverything-else[0m and container [32mstep-source-copy-workspace-4vh24[0m
+{"level":"warn","ts":1587982726.3468475,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587982726.4259455,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c cp -r /pvc/run-make/workspace/. /workspace/source\"; output "}
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-xg87r-2[0m stage [32meverything-else[0m and container [32mstep-build-container-build[0m
+ERROR: logging before flag.Parse: E0427 10:18:46.812971      13 metadata.go:241] Failed to unmarshal scopes: invalid character 'h' looking for beginning of value
+[36mINFO[0m[0000] No base image, nothing to extract            
+[36mINFO[0m[0000] cmd: EXPOSE                                  
+[36mINFO[0m[0000] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0000] Using files from context: [/workspace/source/bin] 
+[36mINFO[0m[0000] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0000] Taking snapshot of full filesystem...        
+[36mINFO[0m[0000] EXPOSE 8080                                  
+[36mINFO[0m[0000] cmd: EXPOSE                                  
+[36mINFO[0m[0000] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0000] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0000] ENTRYPOINT ["/go-project-for-test-command"]  
+[36mINFO[0m[0000] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0000] Using files from context: [/workspace/source/bin] 
+[36mINFO[0m[0000] COPY ./bin/ /                                
+[36mINFO[0m[0000] Taking snapshot of files...                  
+ERROR: logging before flag.Parse: E0427 10:18:47.091834      13 metadata.go:142] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+ERROR: logging before flag.Parse: E0427 10:18:47.094833      13 metadata.go:159] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+2020/04/27 10:18:47 pushed blob: sha256:7be178a8db9942c09a41a41b1baa89b1645f78bba10c6df056ee0f741c893e9e
+2020/04/27 10:18:48 pushed blob: sha256:540711ed434d8146b911ebc53a50073aecc930445e5dade2a7d84c0af61478f1
+2020/04/27 10:18:48 v2.livew.io/go-project-for-test-command:0.0.2: digest: sha256:e3d4656a085331671d8a34d00bfb9fdcb8d36574d6ff0cd6125467958acd2389 size: 428
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-xg87r-2[0m stage [32meverything-else[0m and container [32mstep-build-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-xg87r-2[0m stage [32meverything-else[0m and container [32mstep-promote-changelog[0m
+Converted /workspace/source to an unshallow repository
+Generating change log from git ref 92169146267b51cbe9e3f4b3266c6d514dc618c5 => de9dee3534176be66d4b8a9d1c750541864fc6c8
+Associating user x-0 in users.jenkins.io with email roman@livewyer.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit 56e47641231a41dfc2cefe1fae4dbfe1376c0386 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Associating user x-0 in users.jenkins.io with email roman@livewyer.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit 56e47641231a41dfc2cefe1fae4dbfe1376c0386 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Finding issues in commit messages using git format
+Associating user x-0 in users.jenkins.io with email roman@livewyer.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit 66c0efd728b4fe72520aa9b0121b2767f7167bdb with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Associating user x-0 in users.jenkins.io with email roman@livewyer.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit 66c0efd728b4fe72520aa9b0121b2767f7167bdb with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Associating user x-0 in users.jenkins.io with email roman@livewyer.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit 61b043f9ca40c4f59e1ad998361cac9ef03b8592 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Associating user x-0 in users.jenkins.io with email roman@livewyer.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit 61b043f9ca40c4f59e1ad998361cac9ef03b8592 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+WARNING: No release found for *********/go-project-for-test-command and tag v0.0.2 so creating a new release
+Updated the release information at https://github.com/*********/go-project-for-test-command/releases/tag/v0.0.2
+generated: /workspace/source/charts/go-project-for-test-command/templates/release.yaml
+Created Release go-project-for-test-command-0-0-2 resource in namespace **
+Updating PipelineActivity *********-go-project-for-test-command-master-2 with version 0.0.2
+Updated PipelineActivities *********-go-project-for-test-command-master-2 with release notes URL: https://github.com/*********/go-project-for-test-command/releases/tag/v0.0.2
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-xg87r-2[0m stage [32meverything-else[0m and container [32mstep-promote-helm-release[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Uploading chart file go-project-for-test-command-0.0.2.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Received 201 response: {"saved":true}
+
+Showing logs for build [32mromanrzes-go-project-for-test-c-xg87r-2[0m stage [32meverything-else[0m and container [32mstep-promote-jx-promote[0m
+failed to get helm version: failed to run 'helm version --short' command in directory '', output: 'Client: v2.14.3+g0e7f3b6
+Error: could not find tiller'
+old helm binary on the PATH so replacing with helm 3
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/**r-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Promoting app go-project-for-test-command version 0.0.2 to namespace **-staging
+WARNING: 
+Created Pull Request: https://github.com/*********/environment-test-cluster-staging/pull/5
+Added label updatebot to Pull Request https://github.com/*********/environment-test-cluster-staging/pull/5
+got git provider status pending from PR https://github.com/*********/environment-test-cluster-staging/pull/5
+got git provider status pending from PR https://github.com/*********/environment-test-cluster-staging/pull/5
+got git provider status pending from PR https://github.com/*********/environment-test-cluster-staging/pull/5
+Pull Request https://github.com/*********/environment-test-cluster-staging/pull/5 is merged at sha f1c83364eca792444d27eec5bb5c284ad9821367
+Pull Request merged but we are not waiting for the update pipeline to complete!
+WARNING: Could not find the service URL in namespace **-staging for names go-project-for-test-command, **-go-project-for-test-command, **-staging-go-project-for-test-command
