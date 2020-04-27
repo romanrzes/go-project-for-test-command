@@ -1,0 +1,7 @@
+# !! File must end with empty line !!
+dependencies:
+  # !! "alias: preview" must be last entry in dependencies array !!
+  # !! Place custom dependencies above !!
+- alias: preview
+  name: go-project-for-test-command
+  repository: file://../go-project-for-test-command
